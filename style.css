@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+@font-face {
+    font-family:'KIMM';
+    src: url(./font/한국기계연구원_bold.woff);
+    unicode-range: U+AC00–D7AF;
+}
+body{
+    display: flex;
+    margin: 0;
+    height:100vh;
+    font-family: 'Michroma', sans-serif;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.header{
+    width:33vw;
+    padding-left:5vw;
+    padding-top:4vh;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: space-between;
+    background-color: rgb(216, 162, 192);
+}
+.header::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+.header::-webkit-scrollbar-thumb {
+    background-color: rgb(145, 71, 255, 0.7);
+    border-radius: 3px;
+}
+.header::-webkit-scrollbar-track {
+    background-color: rgb(216, 162, 192, 0.7);
+}
+.title{
+    line-height: 3.5%;
+    font-size: 9.5vh;
+}
+
+h2{
+    width:80%;
+
+    font-size: 2.5vh;
+    font-weight: lighter;
+}
+h3{
+    width:75%;
+    font-size: 2.0vh;
+}
+nav{
+    width:80%;
+    font-size:2.0vh;
+}
+a{    
+    text-decoration: none;
+    padding:3px;
+
+}
+a:hover{
+    text-decoration: none;
+    padding:3px;
+    background-color: rgb(145, 71, 255);
+    color:rgb(255, 242, 112);
+}
+a:active{
+    text-decoration: none;
+    padding:3px;
+    background-color: rgba(145, 71, 255, 0.158);
+    color:rgb(255, 242, 112);
+
+}
+.rightContainer{
+    width:62vw;
+    right:0;
+    height:100%;
+    top:0;
+    position: fixed;
+    overflow-y: scroll;
+
+    display:grid;
+    grid-template-rows: 10vh 90vh ;
+    grid-auto-rows: max-content;
+    background-color: rgb(145, 71, 255);
+}
+
+.rightContainer::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+.rightContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 162, 192);
+    border-radius: 3px;
+}
+.rightContainer::-webkit-scrollbar-track {
+    background-color: rgb(216, 162, 192), 0.7;
+
+}
+.nav{
+    width:61.3vw;
+    height:10vh;
+    right:0.7vw;
+    top:0;
+    position:fixed ;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1 / 2;
+    font-size: 4vh;
+    background-color: rgb(145, 71, 255, 0.7);
+    border-bottom: 0.03vh solid black;
+}
+.content{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 1;
+}
+.songTitle{
+    font-family: 'Noto Sans TC', sans-serif, 'KIMM';
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.mv{
+    height: 0;
+    padding-bottom: 45%;
+}
+
+.mv iframe {
+    right: 10%;
+    position: absolute;
+    width: 80%;
+    height: 55%;
+}
+.content p:nth-child(4){
+    
+    font-family:'KIMM';
+    width:80%;
+    background-color: rgb(138, 63, 252);
+}
